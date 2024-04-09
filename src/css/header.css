@@ -1,5 +1,8 @@
+/*desktop*/
+
 .header {
-  padding: 20px 0;
+  padding-left: 32px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,20 +26,18 @@
   fill: #ae1332;
 }
 .cart-icon {
-  color: #ae1332;
+  fill: #ae1332;
   display: flex;
 }
 .fhb {
-  line-height: 1.28571;
-  letter-spacing: -0.04em;
+  display: flex;
   text-transform: uppercase;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   color: #ae1332;
+  font-weight: 700;
 }
-
-/*
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.header-logo {
+  display: flex;
+  margin-left: -120px;
 }
-*/
