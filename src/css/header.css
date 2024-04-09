@@ -1,5 +1,8 @@
 .header {
   padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-list {
@@ -12,6 +15,21 @@
 .nav-link {
   font-weight: 400;
   letter-spacing: -0.04em;
+  text-align: center;
+  color: #ae1332;
+}
+.icon-logo {
+  display: flex;
+  fill: #ae1332;
+}
+.cart-icon {
+  color: #ae1332;
+  display: flex;
+}
+.fhb {
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
   text-align: center;
   color: #ae1332;
 }
