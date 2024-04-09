@@ -5,17 +5,20 @@
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #ae1332;
 }
 
+/*
 .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
 }
+*/
