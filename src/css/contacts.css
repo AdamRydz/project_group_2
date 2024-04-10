@@ -1,20 +1,18 @@
 
 
-.section-contacts{
+.contacts{
     background-color: #AE1332;
 }
 
 .section-contacts-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
+    max-width: 100%;
 }
 
 .contacts-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: -43px;
+    display: block;
 }
 
 .header-contacts {
@@ -26,7 +24,7 @@
 }
 
 .list-contacts {
-
+    list-style-type: none;
 }
 
 .list-contacts-item {
@@ -38,19 +36,19 @@
 }
 
 .img {
-
+display: block;
 }
 
 .paragraph-contacts {
-
+display: none;
 }
 
 .input-field {
-
+display: none;
 }
 
 .send-button {
-
+display: none;
 }
 
 .hidden-contacts-item {
