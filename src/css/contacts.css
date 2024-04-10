@@ -1,0 +1,74 @@
+
+
+.section-contacts{
+    background-color: #AE1332;
+}
+
+.section-contacts-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: -43px;
+}
+
+.header-contacts {
+    
+}
+
+.container-contacts-images {
+
+}
+
+.list-contacts {
+
+}
+
+.list-contacts-item {
+
+}
+
+.contacts-picture {
+
+}
+
+.img {
+
+}
+
+.paragraph-contacts {
+
+}
+
+.input-field {
+
+}
+
+.send-button {
+
+}
+
+.hidden-contacts-item {
+    display: none;
+}
+
+
+
+
+@media (min-width: 768px){
+
+    .hidden-contacts-item {
+        display: block;
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+
+}
