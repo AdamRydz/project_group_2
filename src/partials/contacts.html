@@ -5,16 +5,75 @@
     <div>   
         <div class="container-contacts-images">
             <ul>
-                <li>img1</li> 
-                <li>img2</li>
+                <li>
+                    <picture class="contacts-picture">
+                        <source
+                        media="(max-width: 767px)"
+                        srcset="
+                            ./img/contact-melon-m1x.jpg    1x,
+                            ./img/contact-melon-m2x.jpg    2x
+                        "
+                        />
+                        <source
+                        media="(min-width: 768px)"
+                        srcset="
+                            ./img/contact-melon-t1x.jpg    1x,
+                            ./img/contact-melon-t2x.jpg    2x
+                        "
+                        />
+                        <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                            ./img/contact-melon-d1x.jpg    1x,
+                            ./img/contact-melon-d2x.jpg    2x
+                        "
+                        />
+                        <img class="img"
+                        src="./img/contact-melon-m1x.jpg"
+                        alt="melon"
+                        />
+                    </picture>
+                </li> 
+                <li>
+                    <picture class="contacts-picture hidden-picture">
+                        <source
+                        media="(min-width: 768px)"
+                        srcset="
+                            ./img/contact-blueb-t1x.jpg    1x,
+                            ./img/contact-blueb-t2x.jpg    2x
+                        "
+                        />
+                        <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                            ./img/contact-blueb-d1x.jpg    1x,
+                            ./img/contact-blueb-d2x.jpg    2x
+                        "
+                        />
+                        <img class="img"
+                        src="./img/contact-blueb-t1x.jpg"
+                        alt="blueberry"
+                        />
+                    </picture>
+                </li>
             </ul>
         </div>
         <p  class="paragraph-contacts">
             Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!
         </p>
         <form>
-            <input></input>
-            <button></button>
+            <input
+                type="text"
+                name="email"
+                id="email"
+                class="input-field"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                placeholder="Enter email..."
+                required
+            />
+            <button class="send-button" type="submit" name="submit">
+                Send
+            </button>
         </form>
     </div>
 </section>
