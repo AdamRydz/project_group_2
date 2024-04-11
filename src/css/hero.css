@@ -1,0 +1,432 @@
+/* ----------------- v HERO v ----------------- */
+
+/* 
+                                                                  
+                                 88           88  88              
+                                 88           ""  88              
+                                 88               88              
+88,dPYba,,adPYba,    ,adPPYba,   88,dPPYba,   88  88   ,adPPYba,  
+88P'   "88"    "8a  a8"     "8a  88P'    "8a  88  88  a8P_____88  
+88      88      88  8b       d8  88       d8  88  88  8PP"""""""  
+88      88      88  "8a,   ,a8"  88b,   ,a8"  88  88  "8b,   ,aa  
+88      88      88   `"YbbdP"'   8Y"Ybbd8"'   88  88   `"Ybbd8"'
+  
+*/
+
+.hero .container {
+    padding: 105px 20px 80px;
+    align-items: center;
+    position: relative;
+}
+
+.hero-bg-banana {
+    /* calc modifiers to be visually true to the layout bc gfx imports from Figma are not so sigma */
+    /* Figma width = 66px, Figma export width = 86px; 86 / 68 = 1.(30) */
+    /* left adjusted manually to be somewhat true to the Figma layout */
+    max-width: calc(66px * 1.3);
+    position: absolute;
+    top: 116px;
+    left: calc(13px - 9px);
+    z-index: 1;
+}
+
+.hero-bg-strawberry {
+    /* calc modifiers to be visually true to the layout bc gfx imports from Figma are not so sigma */
+    /* Figma width = 54px, Figma export width = 64px; 64 / 54 = 1,(142857) */
+    /* right adjusted manually to be somewhat true to the Figma layout */
+    max-width: calc(56px * 1.142857);
+    position: absolute;
+    top: 56px;
+    right: calc(20px - 9px);
+    z-index: 1;
+}
+
+.hero-slogan-aligner {
+    position: absolute;
+    top: 60px;
+    z-index: 3;
+}
+
+.hero-slogan {
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.hero-subsections {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.hero-main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.hero-image-border {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 335px;
+    align-items: center;
+    border-radius: 500px;
+    background: linear-gradient(var(--main-wine), var(--main-wine)) padding-box,
+        linear-gradient(to top, var(--wh), var(--transparent) 80%) border-box;
+    /* gee, it sure would be pretty rad if that % value would be specified somewhere in Figma! a man can dream! */
+    border: 1px solid transparent;
+    margin-bottom: calc(70px - 44px);
+}
+
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 311px;
+    margin: 0 auto;
+    border-radius: 500px;
+    overflow: hidden;
+    margin: 13px auto;
+    z-index: 2;
+}
+
+.shop-now-btn {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    bottom: -27px;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--main-wine);
+    background-color: var(--wh);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shop-now-btn:hover {
+    color: var(--shop-text-hover);
+}
+
+.hero-subsect-2,
+.hero-subsect-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-plaque {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 249px;
+    height: 387px;
+    text-align: center;
+    padding: 28px 5px 40px;
+    border-radius: 500px;
+    margin: auto 43px;
+}
+
+.hero-waterm {
+    background-color: var(--hero-green);
+}
+
+.hero-sbasket {
+    background-color: var(--hero-yellow);
+}
+
+.hero-plaque-description {
+    position: relative;
+}
+
+.hero-plaque h6:first-child {
+    font-weight: 400;
+    text-transform: none;
+}
+
+.hero-plaque h6 {
+    padding: 2px 47px 0;
+}
+
+.hero p {
+    margin: auto 28px;
+}
+
+.hashtags {
+    display: flex;
+}
+
+.hashtags-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    text-align: center;
+}
+
+.hashtags-list-item {
+    border: 1px solid #fff;
+    border-radius: 1000px;
+    padding: 12px 32px;
+    height: 38px;
+}
+
+.hashtags-list-item:nth-child(2n + 1) {
+    min-width: 125px;
+}
+
+.hashtags-list-item:nth-child(2n) {
+    min-width: 132px;
+}
+
+
+/* ----------------- v TABLET RULES v ----------------- */
+
+/*
+                                                           
+                     88           88                       
+  ,d                 88           88                ,d     
+  88                 88           88                88     
+MM88MMM  ,adPPYYba,  88,dPPYba,   88   ,adPPYba,  MM88MMM  
+  88     ""     `Y8  88P'    "8a  88  a8P_____88    88     
+  88     ,adPPPPP88  88       d8  88  8PP"""""""    88     
+  88,    88,    ,88  88b,   ,a8"  88  "8b,   ,aa    88,    
+  "Y888  `"8bbdP"Y8  8Y"Ybbd8"'   88   `"Ybbd8"'    "Y888 
+  
+*/
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+    .hero .container {
+        padding: 99px 32px 144px;
+    }
+
+    .hero-bg-banana {
+        /* calc modifiers to be visually true to the layout bc gfx imports from Figma are not so sigma */
+        /* Figma width = 132px, Figma export width = 170px; 170 / 132 = 1.(287) */
+        /* top & left adjusted manually to be somewhat true to the Figma layout */
+        max-width: calc(132px * 1.288);
+        top: calc(169px - 11px);
+        left: calc(27px - 9px);
+    }
+
+    .hero-bg-strawberry {
+        /* calc modifiers to be visually true to the layout bc gfx imports from Figma are not so sigma */
+        /* Figma width = 108px, Figma export width = 124px; 124 / 108 = 1,(148) */
+        /* right adjusted manually to be somewhat true to the Figma layout */
+        max-width: calc(108px * 1.148);
+        top: calc(55px - 11px);
+        right: calc(20px - 9px);
+    }
+
+    .hero-slogan-aligner {
+        /* differences in font presentation between Figma and browser - adjusted manually to be somewhat true to the Figma layout */
+        top: 61px;
+        max-width: 710px;
+    }
+
+    .hero-subsections {
+        min-width: 704px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 44px 142px;
+    }
+
+    .hero-image-border {
+        width: 486px;
+        margin-bottom: calc(62px - 44px);
+    }
+
+    .hero-image {
+        max-width: 452px;
+        margin: 17px auto;
+    }
+
+    .shop-now-btn {
+        bottom: -18px;
+        font-size: 28px;
+    }
+
+    .hero-subsect-2 {
+        max-width: 281px;
+        align-items: end;
+    }
+
+    .hero-subsect-3 {
+        flex-direction: column-reverse;
+        max-width: 281px;
+        align-items: start;
+    }
+
+    .hero-plaque {
+        margin: 0;
+    }
+
+    .hero p {
+        margin: 0;
+    }
+
+    .hashtags {
+        padding-bottom: 7px;
+    }
+
+    .hashtags-list {
+        justify-content: right;
+    }
+
+    .hashtags-list-item:nth-child(1) {
+        min-width: 125px;
+    }
+
+    .hashtags-list-item:nth-child(2) {
+        min-width: 133px;
+    }
+
+    .hashtags-list-item:nth-child(3) {
+        min-width: 115px;
+    }
+
+    .hashtags-list-item:nth-child(4) {
+        min-width: 110px;
+    }
+}
+
+/*
+                                                                                
+         88                         88                                          
+         88                         88          ,d                              
+         88                         88          88                              
+ ,adPPYb,88   ,adPPYba,  ,adPPYba,  88   ,d8  MM88MMM  ,adPPYba,   8b,dPPYba,   
+a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a  
+8b       88  8PP"""""""   `"Y8ba,   8888[       88    8b       d8  88       d8  
+"8a,   ,d88  "8b,   ,aa  aa    ]8I  88`"Yba,    88,   "8a,   ,a8"  88b,   ,a8"  
+ `"8bbdP"Y8   `"Ybbd8"'  `"YbbdP"'  88   `Y8a   "Y888  `"YbbdP"'   88`YbbdP"'   
+                                                                   88           
+                                                                   88   
+
+*/
+
+@media (min-width: 1280px) {
+
+    .hero .container {
+        padding: 102px 32px 150px;
+        align-items: unset;
+    }
+
+    .hero-bg-banana {
+        /* calc modifiers to be visually true to the layout bc gfx imports from Figma are not so sigma */
+        /* Figma width = 183px, Figma export width = 229px; 229 / 183 = 1,251366... */
+        /* top & left adjusted manually to be somewhat true to the Figma layout */
+        max-width: calc(183px * 1.251366);
+        top: calc(191px - 11px);
+        left: calc(213px - 10px);
+    }
+
+    .hero-bg-strawberry {
+        /* calc modifiers to be visually true to the layout bc gfx imports from Figma are not so sigma */
+        /* Figma width = 120px, Figma export width = 136px; 136 / 120 = 1,1(3) */
+        /* top & right adjusted manually to be somewhat true to the Figma layout */
+        max-width: calc(120px * 1.133333);
+        top: calc(39px - 11px);
+        right: calc(223px - 25px);
+    }
+
+    .hero-slogan-aligner {
+        /* differences in font presentation between Figma and browser - adjusted manually to be somewhat true to the Figma layout */
+        top: 61px;
+        left: 183px;
+        max-width: 914px;
+    }
+
+    .hero-subsections {
+        min-width: 1156px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: start;
+        gap: 0 69px;
+    }
+
+    .hero-main {
+        margin: 0;
+        order: 2;
+        margin-left: 17px;
+    }
+
+    .hero-image-border {
+        width: 486px;
+        margin-bottom: calc(62px - 44px);
+    }
+
+    .hero-image {
+        max-width: 452px;
+        margin: 17px auto;
+    }
+
+    .shop-now-btn {
+        bottom: -18px;
+        font-size: 28px;
+    }
+
+    .hero-subsect-2 {
+        max-width: 249px;
+        justify-content: unset;
+        margin-top: 306px;
+        align-items: start;
+        order: 1;
+        margin-left: 30px;
+    }
+
+    .hero-subsect-3 {
+        flex-direction: column-reverse;
+        max-width: 266px;
+        margin-top: 234px;
+        align-items: end;
+        order: 3;
+        margin-right: 30px;
+    }
+
+    .hero-plaque {
+        margin: 0;
+    }
+
+    .hero p {
+        margin: 0;
+        padding-right: calc(249px - 222px);
+    }
+
+    .hashtags {
+        padding-bottom: unset;
+    }
+
+    .hashtags-list {
+        justify-content: right;
+    }
+
+    .hashtags-list-item {
+        border: 1px solid #fff;
+        border-radius: 1000px;
+        padding: 12px 32px;
+        height: 38px;
+    }
+
+    .hashtags-list-item:nth-child(1) {
+        min-width: 125px;
+    }
+
+    .hashtags-list-item:nth-child(2) {
+        min-width: 133px;
+    }
+
+    .hashtags-list-item:nth-child(3) {
+        min-width: 115px;
+    }
+
+    .hashtags-list-item:nth-child(4) {
+        min-width: 110px;
+    }
+}
