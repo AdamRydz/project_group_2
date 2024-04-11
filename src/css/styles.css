@@ -1,3 +1,355 @@
+/* ----------------- v GENERAL v ----------------- */
+:root {
+    --wh: #fff;
+    --bl: #000000;
+    --main-wine: #ae1332;
+    --social-hover: rgba(174, 19, 50, 0.1);
+    --hero-yellow: #f5ce13;
+    --hero-green: #a4cb66;
+    --shop-text-hover: #a4cb66;
+    --first-step: #ae1332;
+    --second-step: #a1c864;
+    --third-step: #f5ce13;
+    --card-strawb: #f8766b;
+    --card-banana: #edd251;
+    --card-waterm: #9dc262;
+    --card-lime: #bfd663;
+    --card-apple: #e93f29;
+    --card-peach: #db4f4b;
+    --card-plum: #9b5366;
+    --card-orange: #f47f4c;
+    --card-kiwi: #98b37e;
+    --btn-order: #9dc262;
+    --btn-other: #9dc162; /* 'Send' & 'Submit' buttons; possibly should be #9DC262 aka '--green-order-btn' */
+    --card-basket-s: #f8766b;
+    --card-basket-a: #edd251;
+    --card-basket-f: #9dc262;
+    --modal-rapspb: #e03f5e;
+    --transparent: rgba(0, 0, 0, 0);
+    
+/* V   pasted in rush - delete in the case of crash */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--wh);
+    background-color: var(--main-wine);
+    letter-spacing: -0.04em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/* 
+                                                                  
+                                 88           88  88              
+                                 88           ""  88              
+                                 88               88              
+88,dPYba,,adPYba,    ,adPPYba,   88,dPPYba,   88  88   ,adPPYba,  
+88P'   "88"    "8a  a8"     "8a  88P'    "8a  88  88  a8P_____88  
+88      88      88  8b       d8  88       d8  88  88  8PP"""""""  
+88      88      88  "8a,   ,a8"  88b,   ,a8"  88  88  "8b,   ,aa  
+88      88      88   `"YbbdP"'   8Y"Ybbd8"'   88  88   `"Ybbd8"'
+  
+*/
+
+h1 {
+    /*  'Fresh Harvest Box has got you covered' */
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+
+h2,
+.hero-h2,
+.section-h2,
+.modals-h2 {
+    /*  hero, section titles, form title, THANK YOU on modal */
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+
+h3 {
+    /*  fruit names in ORGANIC FRUITS section */
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+}
+
+h4 {
+    /*  basket names in form */
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 133%;
+}
+
+h5,
+p,
+.common-format,
+.address-format {
+    /* common p, form placeholders, Submit/Send buttons, nav/footer links, address */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+}
+
+.plant-card-format,
+.plant-form-format {
+    /* "Plant" in ORGANIC FRUITS section & form */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+}
+
+.price-format {
+    /* ___ UAH / kg */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+}
+
+h6,
+.hero-format {
+    /* plaques & hashtags in hero section */
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 117%;
+    /* font-weight 400/500 and uppercase to be applied separately in class */
+}
+
+.logo-format {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    color: var(--main-wine);
+}
+
+.round-btn {
+    width: 80px;
+    height: 80px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+    transform: rotate(-14deg);
+    border: none;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 375px;
+    padding: 0 20px 80px;
+    margin: 0 auto;
+    /* nav & hero must overwrite padding = put their modified classes below */
+}
+
+footer .container {
+    padding: 80px 20px;
+}
+
+/* ----------------- v TABLET RULES v ----------------- */
+
+/*
+                                                           
+                     88           88                       
+  ,d                 88           88                ,d     
+  88                 88           88                88     
+MM88MMM  ,adPPYYba,  88,dPPYba,   88   ,adPPYba,  MM88MMM  
+  88     ""     `Y8  88P'    "8a  88  a8P_____88    88     
+  88     ,adPPPPP88  88       d8  88  8PP"""""""    88     
+  88,    88,    ,88  88b,   ,a8"  88  "8b,   ,aa    88,    
+  "Y888  `"8bbdP"Y8  8Y"Ybbd8"'   88   `"Ybbd8"'    "Y888 
+  
+*/
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+    h1 {
+        /*  'Fresh Harvest Box has got you covered' */
+        font-size: 54px;
+    }
+
+    .hero-h2 {
+        /*  hero title */
+        font-size: 50px;
+        line-height: 108%;
+    }
+
+    .section-h2,
+    .modals-h2 {
+        /* section titles, form title, THANK YOU on modal */
+        font-size: 40px;
+        line-height: 110%;
+    }
+
+    h3 {
+        /*  fruit names in ORGANIC FRUITS section */
+        font-size: 32px;
+        line-height: 119%;
+    }
+
+    /* h4 (basket names in form) stays the same as mobile */
+
+    /* h5, p, .common-format (form placeholders, Submit/Send buttons, nav/footer links) stay the same as mobile */
+
+    .address-format {
+        /* address in footer */
+        font-size: 14px;
+        line-height: 129%;
+    }
+
+    .plant-card-format {
+        /* "Plant" in ORGANIC FRUITS section */
+        font-size: 18px;
+        line-height: 133%;
+    }
+
+    /* .plant-form-format ("Plant" in form) stays the same as mobile */
+
+    .price-format {
+        /* ___ UAH / kg */
+        font-size: 18px;
+        line-height: 133%;
+    }
+
+    /* h6, .hero-format (plaques & hashtags in hero section) stay the same as mobile; font-weight 400/500 and uppercase to be applied separately in class */
+
+    /* .logo-format stays the same as mobile */
+
+    .round-btn {
+        width: 114px;
+        height: 114px;
+    }
+
+    .container {
+        display: flex;
+        max-width: 768px;
+        padding: 0 32px 144px;
+        /* nav & hero must overwrite padding = put their modified classes below */
+    }
+
+    footer .container {
+        padding: 80px 32px;
+    }
+
+}
+
+/*
+                                                                                
+         88                         88                                          
+         88                         88          ,d                              
+         88                         88          88                              
+ ,adPPYb,88   ,adPPYba,  ,adPPYba,  88   ,d8  MM88MMM  ,adPPYba,   8b,dPPYba,   
+a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a  
+8b       88  8PP"""""""   `"Y8ba,   8888[       88    8b       d8  88       d8  
+"8a,   ,d88  "8b,   ,aa  aa    ]8I  88`"Yba,    88,   "8a,   ,a8"  88b,   ,a8"  
+ `"8bbdP"Y8   `"Ybbd8"'  `"YbbdP"'  88   `Y8a   "Y888  `"YbbdP"'   88`YbbdP"'   
+                                                                   88           
+                                                                   88   
+
+*/
+
+@media (min-width: 1280px) {
+
+    h1,
+    .hero-h2 {
+        /* 'Fresh Harvest Box has got you covered', hero title */
+        font-size: 64px;
+        line-height: 100%;
+    }
+
+    /* .section-h2, .modals-h2 (section titles, form title, THANK YOU on modal) stay the same as tablet */
+
+    /* h3 (fruit names in ORGANIC FRUITS section) stays the same as tablet */
+
+    h4 {
+        /* basket names in form */
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    /* h5, p, .common-format (form placeholders, Submit/Send buttons, nav/footer links) stay the same as tablet */
+
+    /* .address-format (address in footer) stays the same as tablet */
+
+    /* .plant-card-format ("Plant" in ORGANIC FRUITS section) stays the same as tablet */
+
+    /* .plant-form-format ("Plant" in form) stays the same as tablet */
+
+    /* .price-format (___ UAH / kg) stays the same as tablet */
+
+    /* h6, .hero-format (plaques & hashtags in hero section) stay the same as tablet; font-weight 400/500 and uppercase to be applied separately in class */
+
+    /* .logo-format stays the same as tablet */
+
+    .round-btn {
+        width: 114px;
+        height: 114px;
+    }
+
+    .container {
+        display: flex;
+        max-width: 1280px;
+        padding: 0 32px 150px;
+        /* nav & hero must overwrite padding = put their modified classes below */
+    }
+
+    /* footer .container stays the same as tablet */
+
+}
+
 /**
   |============================
   | include css partials with
@@ -13,19 +365,3 @@
 @import url('./footer.css');
 @import url('./thank_you.css');
 @import url('./your_order.css');
-
-:root {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
