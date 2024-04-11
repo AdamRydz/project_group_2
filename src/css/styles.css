@@ -310,9 +310,18 @@ a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a
         line-height: 100%;
     }
 
-    /* .section-h2, .modals-h2 (section titles, form title, THANK YOU on modal) stay the same as tablet */
+    .section-h2,
+    .modals-h2 {
+        /* section titles, form title, THANK YOU on modal */
+        font-size: 40px;
+        line-height: 110%;
+    }
 
-    /* h3 (fruit names in ORGANIC FRUITS section) stays the same as tablet */
+    h3 {
+        /*  fruit names in ORGANIC FRUITS section */
+        font-size: 32px;
+        line-height: 119%;
+    }
 
     h4 {
         /* basket names in form */
@@ -320,19 +329,31 @@ a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a
         font-size: 24px;
     }
 
-    /* h5, p, .common-format (form placeholders, Submit/Send buttons, nav/footer links) stay the same as tablet */
+    /* h5, p, .common-format (form placeholders, Submit/Send buttons, nav/footer links) stay the same as mobile */
 
-    /* .address-format (address in footer) stays the same as tablet */
+    .address-format {
+        /* address in footer */
+        font-size: 14px;
+        line-height: 129%;
+    }
 
-    /* .plant-card-format ("Plant" in ORGANIC FRUITS section) stays the same as tablet */
+    .plant-card-format {
+        /* "Plant" in ORGANIC FRUITS section */
+        font-size: 18px;
+        line-height: 133%;
+    }
 
-    /* .plant-form-format ("Plant" in form) stays the same as tablet */
+    /* .plant-form-format ("Plant" in form) stays the same as mobile */
 
-    /* .price-format (___ UAH / kg) stays the same as tablet */
+    .price-format {
+        /* ___ UAH / kg */
+        font-size: 18px;
+        line-height: 133%;
+    }
 
-    /* h6, .hero-format (plaques & hashtags in hero section) stay the same as tablet; font-weight 400/500 and uppercase to be applied separately in class */
+    /* h6, .hero-format (plaques & hashtags in hero section) stay the same as mobile; font-weight 400/500 and uppercase to be applied separately in class */
 
-    /* .logo-format stays the same as tablet */
+    /* .logo-format stays the same as mobile */
 
     .round-btn {
         width: 114px;
