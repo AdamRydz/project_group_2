@@ -191,6 +191,7 @@ h6,
     justify-content: center;
     max-width: 375px;
     padding: 0 20px 80px;
+    margin: 0 auto;
     /* nav & hero must overwrite padding = put their modified classes below */
 }
 
