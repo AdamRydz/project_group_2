@@ -1,4 +1,4 @@
-.section-fruits-container {
+.section-fruits {
   background: #ae1332;
 
   max-width: 375px;
@@ -25,6 +25,7 @@
   text-align: center;
   color: #fff;
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 44px;
 }
 
 .section-fruits-items {
@@ -35,7 +36,6 @@
 
 .section-fruits-item {
   border-radius: 20px;
-  width: 335px;
 }
 
 .section-fruits-third-header {
@@ -92,6 +92,10 @@
   background: #98b37e;
 }
 
+.fruits-images {
+  margin-left: 20px;
+}
+
 .section-fruits-price {
   border-radius: 200px;
   padding-left: 24px;
@@ -112,6 +116,23 @@
   letter-spacing: -0.04em;
   color: #ae1332;
   padding: 12px 24px;
+}
+
+.order-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #a4cb66;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border: none;
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 767px) {
