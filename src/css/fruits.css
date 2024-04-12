@@ -108,6 +108,11 @@
   bottom: 24px;
 }
 
+.paragraph-price p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .paragraph-price {
   font-family: var(--font-family);
   font-weight: 500;
@@ -115,7 +120,7 @@
   line-height: 129%;
   letter-spacing: -0.04em;
   color: #ae1332;
-  padding: 12px 24px;
+  padding: 12px 0px;
 }
 
 .order-button {
