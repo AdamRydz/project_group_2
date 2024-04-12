@@ -1,0 +1,131 @@
+/* ----------------- v THANK-YOU v ----------------- */
+
+/* 
+                                                                  
+                                 88           88  88              
+                                 88           ""  88              
+                                 88               88              
+88,dPYba,,adPYba,    ,adPPYba,   88,dPPYba,   88  88   ,adPPYba,  
+88P'   "88"    "8a  a8"     "8a  88P'    "8a  88  88  a8P_____88  
+88      88      88  8b       d8  88       d8  88  88  8PP"""""""  
+88      88      88  "8a,   ,a8"  88b,   ,a8"  88  88  "8b,   ,aa  
+88      88      88   `"YbbdP"'   8Y"Ybbd8"'   88  88   `"Ybbd8"'
+  
+*/
+
+.ty-modal-window {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 335px;
+    max-height: 426px;
+    /* change for auto or delete */
+    position: fixed;
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+    top: 0px;
+    margin: 105px auto 0;
+    z-index: 4;
+    padding: 40px 20px;
+    background-color: var(--modal-rapspb);
+    transform: translateY(-128%); /* deactivate to see modal */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ty-modal-window.is-open {
+    /* JS */
+}
+
+.close-window-button {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--transparent);
+    border: none;
+    right: 20px;
+    top: 20px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon {
+    fill: var(--wh);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 5;
+}
+
+.close-window-button:hover .close-icon,
+.close-window-button:focus .close-icon {
+    fill: var(--bl);
+}
+
+.close-window-button:hover,
+.close-window-button:focus {
+    cursor: pointer;
+}
+
+.ty-modal-layout {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.ty-modal-raspberry {
+    display: block;
+    width: 207px;
+    margin-bottom: 20px;
+}
+
+.ty-modal-layout p {
+    margin-top: 14px;
+}
+
+/*
+                                                           
+                     88           88                                       88                         88                                          
+  ,d                 88           88                ,d                     88                         88          ,d                              
+  88                 88           88                88                     88                         88          88   
+MM88MMM  ,adPPYYba,  88,dPPYba,   88   ,adPPYba,  MM88MMM          ,adPPYb,88   ,adPPYba,  ,adPPYba,  88   ,d8  MM88MMM  ,adPPYba,   8b,dPPYba,                         
+  88     ""     `Y8  88P'    "8a  88  a8P_____88    88            a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a  
+  88     ,adPPPPP88  88       d8  88  8PP"""""""    88            8b       88  8PP"""""""   `"Y8ba,   8888[       88    8b       d8  88       d8  
+  88,    88,    ,88  88b,   ,a8"  88  "8b,   ,aa    88,           "8a,   ,d88  "8b,   ,aa  aa    ]8I  88`"Yba,    88,   "8a,   ,a8"  88b,   ,a8"  
+  "Y888  `"8bbdP"Y8  8Y"Ybbd8"'   88   `"Ybbd8"'    "Y888 `         "8bbdP"Y8   `"Ybbd8"'  `"YbbdP"'  88   `Y8a   "Y888  `"YbbdP"'   88`YbbdP"'  
+                                                                                                                                     88   
+                                                                                                                                     88
+
+*/
+
+@media (min-width: 768px) {
+    .ty-modal-window {
+        width: 600px;
+        max-height: 545px;
+        margin: 99px auto 0;
+        padding: 68px 20px 80px;
+        transform: translateY(-119%); /* deactivate to see modal */
+    }
+
+    .close-window-button {
+        width: 28px;
+        height: 28px;
+    }
+
+    .ty-modal-layout {
+        padding: 0 calc(104px - 20px);
+    }
+
+    .ty-modal-raspberry {
+        width: 278px;
+        margin-bottom: 28px;
+    }
+
+    .ty-modal-layout p {
+        margin-top: 14px;
+    }
+}
