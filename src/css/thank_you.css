@@ -393,7 +393,7 @@ a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a
     z-index: 4;
     padding: 40px 20px;
     background-color: var(--modal-rapspb);
-    transform: translateY(-128%); /* deactivate to see modal */
+    transform: translateY(-200%); /* deactivate to see modal */
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -472,7 +472,7 @@ MM88MMM  ,adPPYYba,  88,dPPYba,   88   ,adPPYba,  MM88MMM          ,adPPYb,88   
         max-height: 545px;
         margin: 99px auto 0;
         padding: 68px 20px 80px;
-        transform: translateY(-119%); /* deactivate to see modal */
+        transform: translateY(-200%); /* deactivate to see modal */
     }
 
     .close-window-button {
