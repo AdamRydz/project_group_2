@@ -18,9 +18,483 @@
     />
     
     <script type="module" crossorigin src="/project_group_2/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project_group_2/assets/index-40f2c43c.css">
+    <link rel="stylesheet" href="/project_group_2/assets/index-994d10ea.css">
   </head>
   <body>
+    <header>
+      <header class="header">
+  <!--Normal Menu-->
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="./how_it_works.html" class="nav-link">How It Works</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="./fruits.html" class="nav-link">Frutis</a>
+      </li>
+
+      <li class="nav-item">
+        <a href="./contacts.html" class="nav-link">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="header-logo">
+    <svg class="icon-logo" width="16" height="16">
+      <use href="../img/icons.svg#icon-logo"></use>
+    </svg>
+    <a class="fhb">fresh harvest box</a>
+  </div>
+  <div class="cart">
+    <svg class="cart-icon" width="28" height="28">
+      <use href="../img/icons.svg#icon-cart"></use>
+    </svg>
+  </div>
+
+  <!--Hamburger Menu-->
+  <svg class="icon-menu" width="16" height="16">
+    <use href="../img/icons.svg#icon-menu"></use>
+  </svg>
+</header>
+
+    </header>
+    <main>
+      <!DOCTYPE html>
+<html lang="en">
+    <head>
+    </head>
+    <body>
+            <section class="hero">
+                <div class="container">
+                    <!-- background background background background -->
+                    <picture class="hero-bg-banana">
+                        <source
+                            media="(max-width: 375px)"
+                            srcset="
+                                ../img/bg-banana-m1x.png,
+                                ../img/bg-banana-m2x.png 2x
+                            "
+                        />
+                        <source
+                            media="(max-width: 768px)"
+                            srcset="
+                                ../img/bg-banana-t1x.png,
+                                ../img/bg-banana-t2x.png 2x
+                            "
+                        />
+                        <source
+                            media="(min-width: 769px)"
+                            srcset="
+                                ../img/bg-banana-d1x.png,
+                                ../img/bg-banana-d2x.png 2x
+                            "
+                        />
+                        <img
+                            src="../img/bg-banana-m1x.png"
+                            alt="background-banana"
+                            width="100%"
+                            height="auto"
+                        />
+                    </picture>
+                    <picture class="hero-bg-strawberry">
+                        <source
+                            media="(max-width: 375px)"
+                            srcset="
+                                ../img/bg-straw-m1x.png,
+                                ../img/bg-straw-m2x.png 2x
+                            "
+                        />
+                        <source
+                            media="(max-width: 768px)"
+                            srcset="
+                                ../img/bg-straw-t1x.png,
+                                ../img/bg-straw-t2x.png 2x
+                            "
+                        />
+                        <source
+                            media="(min-width: 769px)"
+                            srcset="
+                                ../img/bg-straw-d1x.png,
+                                ../img/bg-straw-d2x.png 2x
+                            "
+                        />
+                        <img
+                            src="../img/bg-straw-m1x.png"
+                            alt="background-strawberry"
+                            width="100%"
+                            height="auto"
+                        />
+                    </picture>
+                    <!-- background background background background -->
+                    <div class="hero-slogan-aligner">
+                        <h2 class="hero-slogan hero-h2">fresh harvest box</h2>
+                        <h2 class="hero-slogan hero-h2">
+                            is your one-stop place for a delicious fruit basket
+                        </h2>
+                    </div>
+                    <div class="hero-subsections">
+                        <div class="hero-main">
+                            <div class="hero-image-border">
+                                <div class="hero-image">
+                                    <picture>
+                                        <source
+                                            media="(max-width: 375px)"
+                                            srcset="
+                                                ../img/hero-m1x.jpg,
+                                                ../img/hero-m2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 376px)"
+                                            srcset="
+                                                ../img/hero-dt1x.jpg,
+                                                ../img/hero-dt2x.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            src="../img/hero-m2x.jpg"
+                                            alt="Hero image"
+                                            width="100%"
+                                            height="auto"
+                                        />
+                                    </picture>
+                                </div>
+                                <button
+                                    type="button"
+                                    href="#section-fruits"
+                                    class="shop-now-btn round-btn"
+                                >
+                                    SHOP NOW
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero-subsect-2">
+                            <p>
+                                Our expertly curated fruit baskets are made with
+                                the freshest, highest quality fruits available.
+                                Whether you are looking for a healthy snack or a
+                                gift for a loved one, Fresh Harvest Box has got
+                                you covered.
+                            </p>
+                            <div class="hero-plaque hero-waterm">
+                                <h6>Fruit</h6>
+                                <div class="hero-plaque-description">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ../img/hero-waterm-all1x.png,
+                                                ../img/hero-waterm-all2x.png 2x
+                                            "
+                                        />
+                                        <img
+                                            class="hero-plaque-img"
+                                            src="../img/hero-waterm-all1x.png"
+                                            alt="Watermelon"
+                                            width="100%"
+                                            height="auto"
+                                        />
+                                    </picture>
+                                    <h6 class="flavour-text">
+                                        Refreshing and juicy, watermelon is the
+                                        perfect summer treat and a great source
+                                        of hydration
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-subsect-3">
+                            <div class="hashtags">
+                                <ul class="hashtags-list">
+                                    <li class="hashtags-list-item hero-format">
+                                        #organic
+                                    </li>
+                                    <li class="hashtags-list-item hero-format">
+                                        #products
+                                    </li>
+                                    <li class="hashtags-list-item hero-format">
+                                        #basket
+                                    </li>
+                                    <li class="hashtags-list-item hero-format">
+                                        #fruits
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hero-plaque hero-sbasket">
+                                <h6>Fruit</h6>
+                                <div class="hero-plaque-description"></div>
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ../img/hero-basket-all1x.png,
+                                            ../img/hero-basket-all2x.png 2x
+                                        "
+                                    />
+                                    <img
+                                        class="hero-plaque-img"
+                                        src="../img/hero-basket-all1x.png"
+                                        alt="Strawberry basket"
+                                        width="100%"
+                                        height="auto"
+                                    />
+                                </picture>
+                                <h6 class="flavour-text">
+                                    Sweet and juicy, strawberries are packed
+                                    with vitamin C and antioxidants, making them
+                                    a delicious and healthy snack
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </body>
+</html>
+
+      <div class="info-content">
+  <div class="info-header">
+    <p class="info-text">
+      TO ORDER YOUR FRUIT BASKET, SIMPLY FOLLOW THESE EASY STEPS
+    </p>
+
+    <p class="info-subtext">
+      Our baskets are assembled with care and delivered straight to your
+      doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+      your home. Whether you're looking for a healthy snack or a thoughtful
+      gift, our fruit baskets are the perfect choice.
+    </p>
+  </div>
+
+  <div class="info-steps">
+    <div class="info-step">
+      <div class="info-tag">
+        <p>First step</p>
+      </div>
+      <p>
+        Just choose the fruit you want to order by clicking on the checkboxes
+        next to it.
+      </p>
+    </div>
+    <div class="info-step">
+      <div class="info-tag">
+        <p>Second step</p>
+      </div>
+      <p>Click on the basket and fill out the form.</p>
+    </div>
+    <div class="info-step">
+      <div class="info-tag">
+        <p>Third step</p>
+      </div>
+      <p>Sit back and relax! Your fresh fruit basket will be delivered.</p>
+    </div>
+  </div>
+</div>
+
+      
+      <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fresh Harvest Box</title>
+        <link rel="icon" type="image/x-icon" href="../img/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+        />
+        <link rel="stylesheet" href="../css/contacts.css" />
+    </head>
+
+
+<body>
+<section class="contacts">
+    <div class="section-contacts-container container">
+        <div class="contacts-container">
+            <h1 class="header-contacts">
+                Fresh Harvest Box has got you covered
+            </h1>
+            <div class="container-contacts-images">
+                <ul class="list-contacts">
+                    <li class="list-contacts-item">
+                        <div class="thumb">
+                            <picture class="contacts-picture">
+                                <source
+                                media="(max-width: 767px)"
+                                srcset="
+                                    ../img/contact-melon-m1x.jpg    1x,
+                                    ../img/contact-melon-m2x.jpg    2x
+                                "
+                                />
+                                <source
+                                media="(min-width: 768px)"
+                                srcset="
+                                    ../img/contact-melon-t1x.jpg    1x,
+                                    ../img/contact-melon-t2x.jpg    2x
+                                "
+                                />
+                                <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                    ../img/contact-melon-d1x.jpg    1x,
+                                    ../img/contact-melon-d2x.jpg    2x
+                                "
+                                />
+                                <img class="img"
+                                src="../img/contact-melon-m1x.jpg"
+                                alt="melon"
+                                />
+                            </picture>
+                        </div>
+                    </li> 
+                    <li class="hidden-contacts-item">
+                        <div class="thumb">
+                            <picture class="contacts-picture">
+                                <source
+                                media="(min-width: 768px)"
+                                srcset="
+                                    ../img/contact-blueb-t1x.jpg    1x,
+                                    ../img/contact-blueb-t2x.jpg    2x
+                                "
+                                />
+                                <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                    ../img/contact-blueb-d1x.jpg    1x,
+                                    ../img/contact-blueb-d2x.jpg    2x
+                                "
+                                />
+                                <img class="img"
+                                src="../img/contact-blueb-t1x.jpg"
+                                alt="blueberry"
+                                />
+                            </picture>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <p  class="paragraph-contacts">
+            Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!
+        </p>
+        <form>
+            <div class="input-together">
+            <input
+                type="text"
+                name="email"
+                id="email"
+                class="input-field"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                placeholder="Enter email..."
+                required
+            />
+            <button class="send-button" type="submit" name="submit">
+                Send
+            </button>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>
+
+    </main>
+    <footer>
+      <footer>
+    <div class="footer-container">
+        <div class="left-navi-footer">
+            <picture class="footer-picture">
+                <source
+                media="(max-width: 767px)"
+                srcset="
+                ./img/variants/foot-banana-lady-m1x.jpg   1x,
+                ./img/variants/foot-banana-lady-m2x.jpg   2x,
+                "
+                />
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./img/variants/foot-banana-lady-dt1x.jpg   1x,
+                ./img/variants/foot-banana-lady-dt2x.jpg   2x,
+                "
+                />
+                <img class="image" 
+                src="./img/variants/foot-banana-lady-m1x.jpg" 
+                alt="lady with bananas">
+            </picture>
+            <div class="header-logo">
+                <svg class="icon-logo" width="16" height="16">
+                  <use href="../img/icons.svg#icon-logo"></use>
+                </svg>
+                <a class="fhb">fresh harvest box</a>
+              </div>
+        </div>
+        <div class="middle-navi-footer">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="./how_it_works.html" class="nav-link">How It Works</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a href="./fruits.html" class="nav-link">Frutis</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a href="./contacts.html" class="nav-link">Contacts</a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-navi-footer">
+            <div class="icons-navi-footer">
+                <ul class="socials">
+                    <li class="socials-logos">
+                        <a class="socials-links" target="_blank" href="https://www.facebook.com">
+                            <svg class="svg-two" width="24" height="24">
+                                <use href="./img/variants/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-logos">
+                        <a class="socials-links" target="_blank" href="https://www.instagram.com">
+                            <svg class="svg-two" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="socials-logos">
+                        <a class="socials-links" target="_blank" href="https://www.youtube.com">
+                            <svg class="svg-two" width="24" height="24">
+                                <use href="./images/icons.svg#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <address class="adres">
+                    <ul class="">
+                        <li><a class="adres-link" href=tel:+380684439426>+380 (68) 443-94-26</a></li>
+                        <li><a class="adres-link" target="_blank" href="https://www.google.com/maps/place/1678+Pioneer+Rd,+Salt+Lake+City,+UT+84104,+Stany+Zjednoczone/@40.7335892,-111.9626616,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f35b0826d399:0x2b26230524fd3ca3!8m2!3d40.7335892!4d-111.9600867!16s%2Fg%2F11bw41vm_p?entry=ttu">
+                            1678 S. Pioneer Road <br/>
+                            Salt Lake City<br/>
+                            UT 84104<br/>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+    </div>
+
+</footer>
+    </footer>
+    
+    
 
     
   </body>
