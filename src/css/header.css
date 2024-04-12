@@ -1,8 +1,10 @@
+/*desktop*/
+
 .header {
-  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 .nav-list {
@@ -23,20 +25,36 @@
   fill: #ae1332;
 }
 .cart-icon {
-  color: #ae1332;
+  fill: #ae1332;
   display: flex;
 }
 .fhb {
-  line-height: 1.28571;
-  letter-spacing: -0.04em;
+  display: flex;
   text-transform: uppercase;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   color: #ae1332;
+  font-weight: 700;
+}
+.header-logo {
+  display: flex;
+  gap: 0.5rem;
 }
 
-/*
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+@media screen and (min-width: 600px) {
+  .icon-menu {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
 }
-*/
+
+@media screen and (max-width: 600px) {
+  .icon-menu {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+}
