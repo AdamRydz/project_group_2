@@ -118,6 +118,7 @@ ol {
     top: 37px;
     font-weight: 500;
     text-transform: uppercase;
+    max-width: 352px;
 }
 
 .container-contacts-images {
@@ -126,6 +127,8 @@ ol {
 
 .list-contacts {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
 
 .list-contacts-item {
@@ -185,14 +188,66 @@ display: none;
     .input-field {
         display: block;
         border-radius: 100px;
+      width: 292px;
+      height: 48px;
+      background: none;
+      border-color: #FFFFFF;
+      opacity: 0.3;
+      padding: 16px;
     }
+
+
     .send-button {
         display: block;
+        border-radius: 100px;
+        position: relative;
+        right: 40px;
+        font-size: 12px;
+        color: #ffffff;
+        padding: 15px 35px;
+        background-color: #9DC162;
     
     }
 
+    .section-contacts-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
 
+
+    .paragraph-contacts {
+        display:inline-block;
+        text-align: center;
+        margin-top: 80px;
+        line-height: 18px;
+        font-size: 14px;
+        letter-spacing: -0.04em;
+        margin-bottom: 80px;
+    }
+
+    .input-together {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .list-contacts {
+        column-gap: 16px;
+    }
+
+    .header-contacts {
+        font-size: 54px;
+        line-height: 54px;
+        max-width: 100%;
+
+    }
+
+    .contacts-bottom {
+        width: 492px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 
 }
 
