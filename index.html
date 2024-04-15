@@ -18,7 +18,7 @@
     />
     
     <script type="module" crossorigin src="/project_group_2/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project_group_2/assets/index-a4dba690.css">
+    <link rel="stylesheet" href="/project_group_2/assets/index-962387ac.css">
   </head>
   <body>
     <header>
@@ -451,183 +451,149 @@
   </button>
 </section>
 
-      <!-- <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fresh Harvest Box</title>
-        <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-        />
-        <link rel="stylesheet" href="./css/contacts.css" />
-    </head>
-
-
-<body> -->
-<section class="contacts">
-    <div class="section-contacts-container container">
-        <div class="contacts-container">
-            <h1 class="header-contacts">
+      
+<section class="contacts" id="contacts">
+    <div class="container">
+            <h2 class="header-contacts">
                 Fresh Harvest Box has got you covered
-            </h1>
-            <div class="container-contacts-images">
+            </h2>
                 <ul class="list-contacts">
                     <li class="list-contacts-item">
-                        <div class="thumb">
-                            <picture class="contacts-picture">
-                                <source
-                                media="(max-width: 767px)"
-                                srcset="/project_group_2/assets/contact-melon-m1x-ad06d1be.jpg 1x, /project_group_2/assets/contact-melon-m2x-cc4869c2.jpg 2x"
-                                />
-                                <source
-                                media="(min-width: 768px)"
-                                srcset="/project_group_2/assets/contact-melon-t1x-b40bc480.jpg 1x, /project_group_2/assets/contact-melon-t2x-695c5514.jpg 2x"
-                                />
-                                <source
+                        <picture>
+                            <source
                                 media="(min-width: 1280px)"
-                                srcset="/project_group_2/assets/contact-melon-d1x-e757d0e7.jpg 1x, /project_group_2/assets/contact-melon-d2x-c9dc2653.jpg 2x"
-                                />
-                                <img class="img"
-                                src="/project_group_2/assets/contact-melon-m1x-ad06d1be.jpg"
-                                alt="melon"
-                                />
-                            </picture>
-                        </div>
+                                srcset="/project_group_2/assets/contact-melon-d1x-e757d0e7.jpg , /project_group_2/assets/contact-melon-d2x-c9dc2653.jpg 2x"
+                                    type="image/jpg"
+                                    width="792"
+                                    height="502"
+                                
+                            />
+                            <source
+                            media="(min-width: 768px)"
+                            srcset="/project_group_2/assets/contact-melon-t1x-b40bc480.jpg , /project_group_2/assets/contact-melon-t2x-695c5514.jpg 2x"
+                            width="344"
+                            type="image/jpg"
+                            height="480"
+                            />    
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="/project_group_2/assets/contact-melon-m1x-ad06d1be.jpg , /project_group_2/assets/contact-melon-m2x-cc4869c2.jpg 2x"
+                                type="image/jpg"
+                                width="335"
+                                height="476"
+                            />
+                            <img class="contacts-image"
+                            src="/project_group_2/assets/contact-melon-m1x-ad06d1be.jpg"
+                            alt="melon"
+                            width="100%"
+                            height="auto"
+                            loading="lazy"
+                            />
+                        </picture>
                     </li> 
                     <li class="hidden-contacts-item">
-                        <div class="thumb">
-                            <picture class="contacts-picture">
-                                <source
+                        <picture class="contacts-picture">
+                            <source
                                 media="(min-width: 768px)"
                                 srcset="/project_group_2/assets/contact-blueb-t1x-73dbbf4b.jpg 1x, /project_group_2/assets/contact-blueb-t2x-6ad4297e.jpg 2x"
-                                />
-                                <source
+                            />
+                            <source
                                 media="(min-width: 1280px)"
                                 srcset="/project_group_2/assets/contact-blueb-d1x-b864b38a.jpg 1x, /project_group_2/assets/contact-blueb-d2x-47e6d591.jpg 2x"
-                                />
-                                <img class="img"
+                            />
+                            <img class="contacts-images"
                                 src="/project_group_2/assets/contact-blueb-t1x-73dbbf4b.jpg"
                                 alt="blueberry"
-                                />
-                            </picture>
-                        </div>
+                            />
+                        </picture>
                     </li>
                 </ul>
-            </div>
-        </div> 
-        <div class="contacts-bottom">
-            <p  class="paragraph-contacts">
-                Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!
-            </p>
-            <form>
-                <div class="input-together">
-                <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    class="input-field"
-                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                    placeholder="Enter email..."
-                    required
-                />
-                <button class="send-button" type="submit" name="submit">
+            <div class="contacts-bottom">
+                <p  class="paragraph-contacts">
+                Our boxes are packed with delicious, nutritious fruits 
+                and vegetables, perfect for anyone looking to eat 
+                healthier or support local farmers. Order your box today 
+                and start enjoying the best that nature has to offer!
+                </p>
+                <form class="contacts-form"> 
+                    <label class="contacts-label">            
+                        <input
+                            type="email"
+                            name="email"
+                            class="contacts-input-field"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            placeholder="Enter email..."
+                        />
+                    </label>  
+                    <button class="contacts-button" type="submit" name="submit">
                     Send
-                </button>
-                </div>
-            </form>
-        </div>
+                    </button>
+                </form>
+            </div>
     </div>
 </section>
-<!-- </body>
-</html> -->
 
     </main>
     <footer>
-      <footer>
-    <div class="footer-container">
+      <footer class="footer">
+    <div class="footer-container container">
         <div class="left-navi-footer">
-            <picture class="footer-picture">
-                <source
-                media="(max-width: 767px)"
-                srcset="
-                ./img/variants/foot-banana-lady-m1x.jpg   1x,
-                ./img/variants/foot-banana-lady-m2x.jpg   2x,
-                "
-                />
-                <source
-                media="(min-width: 768px)"
-                srcset="
-                ./img/variants/foot-banana-lady-dt1x.jpg   1x,
-                ./img/variants/foot-banana-lady-dt2x.jpg   2x,
-                "
-                />
-                <img class="image" 
-                src="./img/variants/foot-banana-lady-m1x.jpg" 
-                alt="lady with bananas">
-            </picture>
-            <div class="header-logo">
-                <svg class="icon-logo" width="16" height="16">
-                  <use href="../img/icons.svg#icon-logo"></use>
+            <img  
+                src="./img/variants/foot-banana-lady-dt1x.jpg" 
+                srcset=".img/variants/foot-banana-lady-dt2x"
+                width="349"
+                alt="lady with bananas"/>
+            <div class="footer-logo">
+                <svg class="footer-icon-logo" width="16" height="16">
+                  <use href="/project_group_2/assets/icons-d13b890c.svg#icon-logo"></use>
                 </svg>
-                <a class="fhb">fresh harvest box</a>
-              </div>
+                <p class="Footer-name">Fresh Harvest Box</p>
+            </div>
         </div>
-        <div class="middle-navi-footer">
-            <nav class="nav">
-                <ul class="nav-list">
-                  <li class="nav-item">
-                    <a href="./how_it_works.html" class="nav-link">How It Works</a>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                  <li>
+                    <a href="./how_it_works.html" class="footer-nav-link">How It Works</a>
                   </li>
         
-                  <li class="nav-item">
-                    <a href="./fruits.html" class="nav-link">Frutis</a>
+                  <li>
+                    <a href="./fruits.html" class="footer-nav-link">Frutis</a>
                   </li>
         
-                  <li class="nav-item">
-                    <a href="./contacts.html" class="nav-link">Contacts</a>
+                  <li>
+                    <a href="./contacts.html" class="footer-nav-link">Contacts</a>
                   </li>
                 </ul>
             </nav>
-        </div>
         <div class="right-navi-footer">
-            <div class="icons-navi-footer">
-                <ul class="socials">
-                    <li class="socials-logos">
-                        <a class="socials-links" target="_blank" href="https://www.facebook.com">
-                            <svg class="svg-two" width="24" height="24">
-                                <use href="./img/variants/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials-logos">
-                        <a class="socials-links" target="_blank" href="https://www.instagram.com">
-                            <svg class="svg-two" width="24" height="24">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
+            <ul class="footer-socials">
+                <li class="footer-socials-logos">
+                    <a class="socials-links" target="_blank" href="https://www.facebook.com">
+                        <svg class="svg-two" width="28" height="28">
+                            <use href="./img/variants/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-socials-logos">
+                    <a class="socials-links" target="_blank" href="https://www.instagram.com">
+                        <svg class="svg-two" width="28" height="28">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
 
-                    <li class="socials-logos">
-                        <a class="socials-links" target="_blank" href="https://www.youtube.com">
-                            <svg class="svg-two" width="24" height="24">
-                                <use href="./images/icons.svg#icon-youtube"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <address class="adres">
-                    <ul class="">
-                        <li><a class="adres-link" href=tel:+380684439426>+380 (68) 443-94-26</a></li>
-                        <li><a class="adres-link" target="_blank" href="https://www.google.com/maps/place/1678+Pioneer+Rd,+Salt+Lake+City,+UT+84104,+Stany+Zjednoczone/@40.7335892,-111.9626616,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f35b0826d399:0x2b26230524fd3ca3!8m2!3d40.7335892!4d-111.9600867!16s%2Fg%2F11bw41vm_p?entry=ttu">
+                <li class="footer-socials-logos">
+                    <a class="socials-links" target="_blank" href="https://www.youtube.com">
+                        <svg class="svg-two" width="28" height="28">
+                            <use href="./images/icons.svg#icon-youtube"></use>
+                        </svg>
+                     </a>
+                </li>
+            </ul>
+                <address>
+                    <ul class="footer-adress">
+                        <li><a class="adres-link telephone" href=tel:+380684439426>+380 (68) 443-94-26</a></li>
+                        <li><a class="adres-link maps" target="_blank" href="https://www.google.com/maps/place/1678+Pioneer+Rd,+Salt+Lake+City,+UT+84104,+Stany+Zjednoczone/@40.7335892,-111.9626616,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f35b0826d399:0x2b26230524fd3ca3!8m2!3d40.7335892!4d-111.9600867!16s%2Fg%2F11bw41vm_p?entry=ttu">
                             1678 S. Pioneer Road <br/>
                             Salt Lake City<br/>
                             UT 84104<br/>
@@ -635,10 +601,8 @@
                         </li>
                     </ul>
                 </address>
-            </div>
         </div>
     </div>
-
 </footer>
     </footer>
     
