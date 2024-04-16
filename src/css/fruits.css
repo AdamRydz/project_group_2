@@ -39,12 +39,13 @@
 }
 
 .section-fruits-third-header {
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
   letter-spacing: -0.04em;
   color: #fff;
-  margin: 24px;
+  margin-left: 24px;
 }
 
 .section-fruits-paragraph {
@@ -137,7 +138,20 @@
   text-align: center;
   color: #fff;
   border: none;
+  margin: 0 auto;
+  font-display: inline-block;
+  border: none;
   margin-top: 40px;
+  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  transform: rotate(-14deg);
+}
+
+.button-container {
+  text-align: center;
+}
+
+.order-icon {
+  fill: #fff;
 }
 
 @media screen and (max-width: 767px) {
@@ -155,10 +169,57 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section-fruits {
+    max-width: 767px;
+  }
+
+  .section-fruits-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
   .item-kiwi {
     display: none;
+  }
+
+  .section-fruits-header {
+    font-size: 40px;
+    line-height: 110%;
+  }
+
+  .section-fruits-third-header {
+    font-size: 32px;
+    line-height: 119%;
+  }
+
+  .section-fruits-paragraph {
+    font-size: 18px;
+    line-height: 133%;
+  }
+
+  .section-fruits-price {
+    width: 136px;
+    height: 48px;
+  }
+
+  .paragraph-price {
+    font-size: 18px;
+    line-height: 133%;
+    padding: 15px 42px;
+  }
+
+  .order-button {
+    width: 114px;
+    height: 114px;
+    font-size: 18px;
+    line-height: 133%;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .section-fruits {
+    min-width: 1280px;
+  }
 }
