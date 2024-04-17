@@ -7,6 +7,10 @@
   background-color: white;
 }
 
+.icon-menu {
+  color: #ae1332;
+}
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -56,5 +60,17 @@
   }
   .nav {
     display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cart {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cart {
+    display: block;
   }
 }
