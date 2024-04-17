@@ -154,6 +154,9 @@
   color: #9dc262;
   fill: #9dc262;
 }
+.button-container {
+  padding-top: 40px;
+}
 
 @media screen and (max-width: 767px) {
   .item-plum {
