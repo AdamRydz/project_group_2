@@ -643,7 +643,7 @@ MM88MMM  ,adPPYYba,  88,dPPYba,   88   ,adPPYba,  MM88MMM
         width: 704px;
         min-height: 853px;
         padding: 40px;
-        background-image: url(./img/modal-banana-lady-t1x.png);
+        background-image: url(/img/modal-banana-lady-t1x.png);
         background-size: 290px 464px;
         background-repeat: no-repeat;
         background-position: 100% 100%;
@@ -706,6 +706,10 @@ MM88MMM  ,adPPYYba,  88,dPPYba,   88   ,adPPYba,  MM88MMM
         width: 360px;
         padding: 15px 24px;
     }
+    
+    .ord-field:invalid {
+    border: 2px solid var(--main-wine);
+}
 
     .ord-input {
         height: 48px;
@@ -732,7 +736,7 @@ MM88MMM  ,adPPYYba,  88,dPPYba,   88   ,adPPYba,  MM88MMM
 
 @media (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi) {
     .ord-modal-window {
-        background-image: url(./img/modal-banana-lady-t2x.png);
+        background-image: url(/img/modal-banana-lady-t2x.png);
     }
 }
 
@@ -756,7 +760,7 @@ a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a
         width: 891px;
         min-height: 911px;
         padding: 40px;
-        background-image: url(./img/modal-banana-lady-d1x.png);
+        background-image: url(/img/modal-banana-lady-d1x.png);
         background-size: 471px 458px;
         background-repeat: no-repeat;
         background-position: 100% 100.1%;
@@ -828,6 +832,10 @@ a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a
         padding: 15px 24px;
     }
 
+.ord-field:invalid {
+    border: 2px solid var(--main-wine);
+}
+
     .ord-input {
         height: 48px;
     }
@@ -853,6 +861,6 @@ a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a
 
 @media (min-width: 1280px) and (min-resolution: 192dpi) {
     .ord-modal-window {
-        background-image: url(./img/modal-banana-lady-d2x.png);
+        background-image: url(/img/modal-banana-lady-d2x.png);
     }
 }
