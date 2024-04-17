@@ -569,7 +569,7 @@ a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a
 }
 
 .ord-field:invalid {
-    border: 2px solid var(--main-wine);
+    border: 2px solid red;
 }
 
 .ord-field:not(.ord-textarea):valid {
@@ -708,7 +708,7 @@ MM88MMM  ,adPPYYba,  88,dPPYba,   88   ,adPPYba,  MM88MMM
     }
     
     .ord-field:invalid {
-    border: 2px solid var(--main-wine);
+    border: 2px solid red;
 }
 
     .ord-input {
@@ -833,7 +833,7 @@ a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a
     }
 
 .ord-field:invalid {
-    border: 2px solid var(--main-wine);
+    border: 2px solid red
 }
 
     .ord-input {
