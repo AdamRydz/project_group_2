@@ -1,6 +1,5 @@
 .section-fruits {
   background: #ae1332;
-
   max-width: 375px;
   padding: 0 15px;
   margin: 0 auto;
@@ -39,7 +38,6 @@
 }
 
 .section-fruits-third-header {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
@@ -115,7 +113,6 @@
 }
 
 .paragraph-price {
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
   line-height: 129%;
@@ -124,34 +121,38 @@
   padding: 12px 0px;
 }
 
-.order-button {
+.fruits-button {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: #a4cb66;
-  font-family: var(--font-family);
+  transform: rotate(-14deg);
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.fruits-icon {
+  fill: #fff;
+}
+
+.fruits-order {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 133%;
+  font-size: 14px;
+  line-height: 129%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  border: none;
-  margin: 0 auto;
-  font-display: inline-block;
-  border: none;
-  margin-top: 40px;
-  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-  transform: rotate(-14deg);
 }
 
-.button-container {
-  text-align: center;
-}
-
-.order-icon {
-  fill: #fff;
+.fruits-button:hover {
+  transition: 0.3s;
+  background-color: #fff;
+  color: #9dc262;
+  fill: #9dc262;
 }
 
 @media screen and (max-width: 767px) {
@@ -171,6 +172,12 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .section-fruits {
     max-width: 767px;
+  }
+
+  .section-fruits-text {
+    max-width: 547px;
+    margin: 0 auto;
+    margin-bottom: 44px;
   }
 
   .section-fruits-items {
@@ -199,27 +206,45 @@
     line-height: 133%;
   }
 
-  .section-fruits-price {
-    width: 136px;
-    height: 48px;
-  }
-
   .paragraph-price {
     font-size: 18px;
     line-height: 133%;
-    padding: 15px 42px;
   }
 
-  .order-button {
+  .fruits-button {
     width: 114px;
     height: 114px;
+    padding: 38px 18px;
+  }
+
+  .fruits-order {
     font-size: 18px;
     line-height: 133%;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .section-fruits {
     min-width: 1280px;
+  }
+
+  .section-fruits-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .section-fruits-text {
+    max-width: 547px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+  }
+
+  .section-fruits-item {
+    width: 389px;
+    padding: 64px 24px 24px;
+  }
+
+  .fruits-images {
+    margin: 0 auto;
   }
 }
