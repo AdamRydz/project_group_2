@@ -18,7 +18,7 @@
     />
     
     <script type="module" crossorigin src="/project_group_2/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project_group_2/assets/index-83dcb4bd.css">
+    <link rel="stylesheet" href="/project_group_2/assets/index-2ca7e1d6.css">
   </head>
   <body>
     <header>
@@ -607,7 +607,244 @@
     </div>
 </footer>
     </footer>
-    
+    <!-- ================= v  YOUR ORDER MODAL  v ================= -->
+<!-- ----------------- v  MODAL WINDOW  v ----------------- -->
+<div class="ord-modal-window">
+    <h2 class="modals-h2">your order</h2>
+    <button class="ord-close-window-button" type="button">
+        <svg class="ord-close-icon" width="100%" height="100%">
+            <use href="/project_group_2/assets/icons-d13b890c.svg#icon-close"></use>
+        </svg>
+    </button>
+    <!-- ----------------- v  BASKET CHECKBOXES  v ----------------- -->
+    <form class="ord-main">
+        <div class="ord-basket-choice">
+            <ul class="ord-basket-list">
+                <li class="ord-basket-item">
+                    <div class="ord-check">
+                        <input
+                            id="strawberry-basket"
+                            name="strawberry-basket"
+                            type="checkbox"
+                            class="ord-check-indicator visually-hidden"
+                            value="true"
+                        />
+                        <label for="strawberry-basket" class="ord-basket-label">
+                            <span class="ord-checkbox">
+                                <svg
+                                    class="ord-checkmark-icon"
+                                    width="100%"
+                                    height="100%"
+                                >
+                                    <use
+                                        href="/project_group_2/assets/icons-d13b890c.svg#icon-checkmark"
+                                    ></use>
+                                </svg>
+                            </span>
+                            <span class="ord-text-aligner"
+                                ><h4>Strawberry Basket</h4>
+                                <p class="plant-form-format">Plant</p></span
+                            ><picture class="ord-basket-img">
+                                <source
+                                    media="(max-width: 375px)"
+                                    srcset="/project_group_2/assets/modal-s-basket-m1x-6e54d69a.png , /project_group_2/assets/modal-s-basket-m2x-b54147f2.png 2x"
+                                />
+                                <source
+                                    media="(max-width: 768px)"
+                                    srcset="/project_group_2/assets/modal-s-basket-t1x-37e1c0a8.png , /project_group_2/assets/modal-s-basket-t2x-02b70feb.png 2x"
+                                />
+                                <source
+                                    media="(min-width: 769px)"
+                                    srcset="/project_group_2/assets/modal-s-basket-d1x-48bce1e7.png , /project_group_2/assets/modal-s-basket-d2x-8aeb6367.png 2x"
+                                />
+                                <img
+                                    src="/project_group_2/assets/modal-s-basket-m1x-6e54d69a.png"
+                                    alt="Strawberry Basket"
+                                    width="100%"
+                                    height="auto"
+                                />
+                            </picture>
+                        </label>
+                    </div>
+                </li>
+                <li class="ord-basket-item">
+                    <div class="ord-check">
+                        <input
+                            id="apple-basket"
+                            name="apple-basket"
+                            type="checkbox"
+                            class="ord-check-indicator visually-hidden"
+                            value="true"
+                        />
+                        <label for="apple-basket" class="ord-basket-label">
+                            <span class="ord-checkbox">
+                                <svg
+                                    class="ord-checkmark-icon"
+                                    width="100%"
+                                    height="100%"
+                                >
+                                    <use
+                                        href="/project_group_2/assets/icons-d13b890c.svg#icon-checkmark"
+                                    ></use>
+                                </svg>
+                            </span>
+                            <span class="ord-text-aligner"
+                                ><h4>Apple Basket</h4>
+                                <p class="plant-form-format">Plant</p></span
+                            ><picture class="ord-basket-img">
+                                <source
+                                    media="(max-width: 375px)"
+                                    srcset="/project_group_2/assets/modal-a-basket-m1x-c24a59ea.png , /project_group_2/assets/modal-a-basket-m2x-0cfd7fd8.png 2x"
+                                />
+                                <source
+                                    media="(max-width: 768px)"
+                                    srcset="/project_group_2/assets/modal-a-basket-t1x-041e37cb.png , /project_group_2/assets/modal-a-basket-t2x-b18599e6.png 2x"
+                                />
+                                <source
+                                    media="(min-width: 769px)"
+                                    srcset="/project_group_2/assets/modal-a-basket-d1x-efcb45af.png , /project_group_2/assets/modal-a-basket-d2x-a330ff54.png 2x"
+                                />
+                                <img
+                                    src="/project_group_2/assets/modal-a-basket-m1x-c24a59ea.png"
+                                    alt="Apple Basket"
+                                    width="100%"
+                                    height="auto"
+                                />
+                            </picture>
+                        </label>
+                    </div>
+                </li>
+                <li class="ord-basket-item">
+                    <div class="ord-check">
+                        <input
+                            id="fruits-basket"
+                            name="fruits-basket"
+                            type="checkbox"
+                            class="ord-check-indicator visually-hidden"
+                            value="true"
+                        />
+                        <label for="fruits-basket" class="ord-basket-label">
+                            <span class="ord-checkbox">
+                                <svg
+                                    class="ord-checkmark-icon"
+                                    width="100%"
+                                    height="100%"
+                                >
+                                    <use
+                                        href="/project_group_2/assets/icons-d13b890c.svg#icon-checkmark"
+                                    ></use>
+                                </svg>
+                            </span>
+                            <span class="ord-text-aligner"
+                                ><h4>Fruits Basket</h4>
+                                <p class="plant-form-format">Plant</p></span
+                            ><picture class="ord-basket-img">
+                                <source
+                                    media="(max-width: 375px)"
+                                    srcset="/project_group_2/assets/modal-f-basket-m1x-de8b9328.png , /project_group_2/assets/modal-f-basket-m2x-8ead37d1.png 2x"
+                                />
+                                <source
+                                    media="(max-width: 768px)"
+                                    srcset="/project_group_2/assets/modal-f-basket-t1x-0f9350e8.png , /project_group_2/assets/modal-f-basket-t2x-7ad462bb.png 2x"
+                                />
+                                <source
+                                    media="(min-width: 769px)"
+                                    srcset="/project_group_2/assets/modal-f-basket-d1x-49d17419.png , /project_group_2/assets/modal-f-basket-d2x-8e19c63f.png 2x"
+                                />
+                                <img
+                                    src="/project_group_2/assets/modal-f-basket-m1x-de8b9328.png"
+                                    alt="Fruits Basket"
+                                    width="100%"
+                                    height="auto"
+                                />
+                            </picture>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="ord-inputs">
+            <!-- ----------------- v  INPUT BOXES  v ----------------- -->
+            <!-- -->
+            <!-- ----------------- v  NAME BOX  v ----------------- -->
+            <div class="ord-input-item">
+                <label for="ord-full-name" class="visually-hidden"
+                    >Full Name</label
+                >
+                <div class="ord-input-box">
+                    <input
+                        id="-ord-full-name"
+                        name="full-name"
+                        type="text"
+                        pattern="^([a-zA-Zà-ÿÀ-ßĀ-ž\u0027-\u002D]{2,}\s+)(?:[a-zA-Zà-ÿÀ-ßĀ-ž\u0027-\u002D]+\s+)?[a-zA-Zà-ÿÀ-ßĀ-ž\u0027-\u002D]{2,}$"
+                        autocomplete="name"
+                        class="ord-input ord-field common-format"
+                        placeholder="Enter full name..."
+                        title="Pole musi zawierać imię lub oba imiona oraz nazwisko oddzielone spacją. Dopuszczalne są apostrofy i myślniki."
+                        required
+                    />
+                </div>
+            </div>
+            <!-- ----------------- v  EMAIL BOX  v ----------------- -->
+            <div class="ord-input-item">
+                <label for="ord-email" class="visually-hidden">Phone</label>
+                <div class="ord-input-box">
+                    <input
+                        id="ord-email"
+                        name="email"
+                        type="email"
+                        pattern="^\S+\u0040\S+(\u002E\S+)+$"
+                        autocomplete="email"
+                        class="ord-input ord-field common-format"
+                        placeholder="Enter email..."
+                        title="Pole musi zawierać @ oraz kropki/-ę przed oznaczeniem domen/-y."
+                        required
+                    />
+                </div>
+            </div>
+            <!-- ----------------- v  CARD BOX  v ----------------- -->
+            <div class="ord-input-item">
+                <label for="ord-card" class="visually-hidden">Email</label>
+                <div class="ord-input-box">
+                    <input
+                        id="ord-card"
+                        name="card"
+                        type="tel"
+                        pattern="[0-9]{13,16}"
+                        maxlength="16"
+                        autocomplete="cc-number"
+                        class="ord-input ord-field common-format"
+                        placeholder="Enter card..."
+                        title="Pole musi 13-16 cyfr numeru karty nieoddzielonych spacjami."
+                        required
+                    />
+                </div>
+            </div>
+            <!-- ----------------- v  COMMENT BOX  v ----------------- -->
+
+            <div class="ord-comment">
+                <label for="user-comment" class="visually-hidden">Comment</label
+                ><textarea
+                    id="user-comment"
+                    name="user-comment"
+                    class="ord-textarea ord-field common-format"
+                    placeholder="Enter comments..."
+                ></textarea>
+            </div>
+        </div>
+        <!-- ----------------- v  SUBMIT BUTTON  v ----------------- -->
+        <div class="ord-button">
+            <button
+                class="ord-submit-button common-format"
+                type="submit"
+                name="submit-form"
+            >
+                Submit
+            </button>
+        </div>
+    </form>
+</div>
+
     
         <!-- ------------------ v TY MODAL v ----------------- -->
         <div class="ty-modal-window">
