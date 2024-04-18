@@ -7,7 +7,7 @@
 }
 
 .icon-menu {
-  color: #ae1332;
+  fill: #ae1332;
 }
 
 .nav-list {
@@ -41,6 +41,7 @@
 }
 .header-logo {
   display: flex;
+
   gap: 0.5rem;
 }
 
@@ -63,13 +64,13 @@
 }
 
 @media screen and (min-width: 600px) {
-  .cart {
-    display: none;
+  .cart-icon {
+    display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .cart {
-    display: block;
+  .cart-icon {
+    display: none;
   }
 }
