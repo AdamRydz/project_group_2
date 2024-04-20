@@ -1,0 +1,107 @@
+
+<section class="contacts" id="contacts">
+    <div class="container">
+            <h2 class="header-contacts">
+                Fresh Harvest Box has got you covered
+            </h2>
+                <ul class="list-contacts">
+                    <li class="list-contacts-item">
+                        <picture>
+                            <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                    ./img/variants/contact-melon-d1x.png,
+                                    ./img/variants/contact-melon-d2x.png 2x
+                                    "
+                                    type="image/png"
+                                    width="792"
+                                    height="502"
+                                
+                            />
+                            <source
+                            media="(min-width: 768px)"
+                            srcset="
+                                ./img/variants/contact-melon-t1x.png,
+                                ./img/variants/contact-melon-t2x.png 2x
+                            "
+                            width="344"
+                            type="image/png"
+                            height="480"
+                            />    
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="
+                                    ./img/variants/contact-melon-m1x.png,
+                                    ./img/variants/contact-melon-m2x.png 2x
+                                "
+                                type="image/png"
+                                width="335"
+                                height="476"
+                            />
+                            <img class="contacts-image"
+                            src="./img/variants/contact-melon-m1x.png"
+                            alt="melon"
+                            width="100%"
+                            height="auto"
+                            loading="lazy"
+                            />
+                        </picture>
+                    </li> 
+                    <li class="hidden-contacts-item">
+                        <picture class="contacts-picture">
+                            <source
+                                media="(min-width: 768px)"
+                                srcset="
+                                    ./img/variants/contact-blueb-t1x.png    1x,
+                                    ./img/variants/contact-blueb-t2x.png    2x
+                                "
+                                type="image/png"
+                                width="344"
+                                height="480"
+
+
+                            />
+                            <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                    ./img/variants/contact-blueb-d1x.png    1x,
+                                    ./img/variants/contact-blueb-d2x.png    2x
+                                "
+                                type="image/png"
+                                width="400"
+                                height="502"
+                            />
+                            <img class="contacts-image"
+                                src="./img/variants/contact-blueb-t1x.png"
+                                alt="blueberry"
+                                width="100%"
+                                loading="lazy"
+                            />
+                        </picture>
+                    </li>
+                </ul>
+            <div class="contacts-bottom">
+                <p  class="paragraph-contacts">
+                Our boxes are packed with delicious, nutritious fruits 
+                and vegetables, perfect for anyone looking to eat 
+                healthier or support local farmers. Order your box today 
+                and start enjoying the best that nature has to offer!
+                </p>
+                <form class="contacts-form"> 
+                    <label class="contacts-label">            
+                        <input
+                            type="email"
+                            name="email"
+                            class="contacts-input-field"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            placeholder="Enter email..."
+                        />
+                    </label>  
+                    <button class="contacts-button" type="submit" name="submit">
+                    Send
+                    </button>
+                </form>
+            </div>
+    </div>
+    
+</section>
