@@ -2,7 +2,7 @@
   background: #ae1332;
   max-width: 375px;
   padding: 0 15px;
-  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .section-fruits-header {
@@ -185,6 +185,7 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .section-fruits {
     max-width: 767px;
+    margin-top: 144px;
   }
 
   .section-fruits-text {
@@ -242,6 +243,7 @@
 @media screen and (min-width: 1280px) {
   .section-fruits {
     min-width: 1280px;
+    margin-top: 150px;
   }
 
   .section-fruits-items {
