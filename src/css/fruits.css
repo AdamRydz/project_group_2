@@ -226,6 +226,9 @@
   .paragraph-price {
     font-size: 18px;
     line-height: 133%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
   }
 
   .fruits-button {
