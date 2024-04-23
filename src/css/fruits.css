@@ -1,0 +1,270 @@
+.section-fruits {
+  margin-top: 80px;
+  margin: 0 auto;
+}
+
+.section-fruits-header {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.section-fruits-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 44px;
+}
+
+.section-fruits-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.section-fruits-item {
+  border-radius: 20px;
+}
+
+.section-fruits-third-header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-left: 24px;
+  margin-top: 64px;
+}
+
+.section-fruits-paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin: 24px;
+  margin-top: 8px;
+}
+
+.item-strawberry {
+  background: #f8766b;
+}
+
+.item-banana {
+  background: #edd251;
+}
+
+.item-watermelon {
+  background: #9dc262;
+}
+
+.item-lime {
+  background: #bfd663;
+}
+
+.item-apple {
+  background: #e93f29;
+}
+
+.item-peach {
+  background: #db4f4b;
+}
+
+.item-plum {
+  background: #9b5366;
+}
+
+.item-orange {
+  background: #f47f4c;
+}
+
+.item-kiwi {
+  background: #98b37e;
+}
+
+.fruits-images {
+  margin-left: 20px;
+}
+
+.section-fruits-price {
+  border-radius: 200px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  width: 126px;
+  height: 42px;
+  background: #fff;
+  position: relative;
+  left: 24px;
+  bottom: 24px;
+}
+
+.paragraph-price p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.paragraph-price {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  color: #ae1332;
+  padding: 12px 0px;
+}
+
+.fruits-button {
+  background-color: #9dc262;
+  color: #fff;
+  transition: 0.3s;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: none;
+  fill: #fff;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transform: rotate(-14deg);
+}
+
+.fruits-order {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(-14deg);
+}
+
+.fruits-icon {
+  transform: rotate(14deg);
+  fill: #fff;
+}
+
+.fruits-button:hover {
+  transition: 0.3s;
+  background-color: #fff;
+  color: #9dc262;
+  fill: #9dc262;
+}
+.button-container {
+  padding-top: 40px;
+}
+
+.fruits-button:active {
+  background-color: #fff;
+  color: #9dc262;
+  fill: #9dc262;
+  transition-duration: 0.1s;
+}
+
+@media screen and (max-width: 767px) {
+  .item-plum {
+    display: none;
+  }
+
+  .item-orange {
+    display: none;
+  }
+
+  .item-kiwi {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section-fruits {
+    margin-top: 144px;
+  }
+
+  .section-fruits-text {
+    max-width: 547px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+  }
+
+  .section-fruits-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .item-kiwi {
+    display: none;
+  }
+
+  .section-fruits-header {
+    font-size: 40px;
+    line-height: 110%;
+  }
+
+  .section-fruits-third-header {
+    font-size: 32px;
+    line-height: 119%;
+  }
+
+  .section-fruits-paragraph {
+    font-size: 18px;
+    line-height: 133%;
+  }
+
+  .paragraph-price {
+    font-size: 18px;
+    line-height: 133%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .fruits-button {
+    width: 114px;
+    height: 114px;
+    padding: 38px 18px;
+  }
+
+  .fruits-order {
+    font-size: 18px;
+    line-height: 133%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-fruits {
+    margin-top: 150px;
+  }
+
+  .section-fruits-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .section-fruits-text {
+    max-width: 547px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+  }
+
+  .section-fruits-item {
+    width: 389px;
+    padding: 64px 24px 24px;
+  }
+
+  .fruits-images {
+    margin: 0 auto;
+  }
+}
