@@ -265,6 +265,9 @@ img {
 
 }
 
+/* <<<<<<< feature-contactsandfooter */
+@media (width >= 1280px) {
+=======
 @media screen and (width >= 1280px) {
   .contacts {
     padding-top: 150px;
@@ -289,6 +292,7 @@ img {
     color: #fff;
   }
 
+/* >>>>>>> main */
 
     .contacts {
         padding-top: 150px;
@@ -389,6 +393,10 @@ img {
         
     }
 
+/*<<<<<<< feature-contactsandfooter*/
+
+}
+=======
 }
 =======
   .list-contacts {
@@ -463,3 +471,4 @@ img {
   }
 }
 
+/*>>>>>>> main*/
