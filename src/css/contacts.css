@@ -186,7 +186,7 @@ img{
     }
 }
 
-@media screen and (width >= 1280px) {
+@media (width >= 1280px) {
 
     .contacts {
         padding-top: 150px;
@@ -286,5 +286,6 @@ img{
         height: 502px;
         
     }
+
 
 }
