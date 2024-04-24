@@ -1,113 +1,106 @@
-<!-- <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fresh Harvest Box</title>
-        <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-        />
-        <link rel="stylesheet" href="./css/contacts.css" />
-    </head>
 
-
-<body> -->
-<section class="contacts">
-    <div class="section-contacts-container container">
-        <div class="contacts-container">
-            <h1 class="header-contacts">
+<section class="contacts" id="contacts">
+    <div class="container">
+            <h2 class="header-contacts">
                 Fresh Harvest Box has got you covered
-            </h1>
-            <div class="container-contacts-images">
+            </h2>
                 <ul class="list-contacts">
                     <li class="list-contacts-item">
-                        <div class="thumb">
-                            <picture class="contacts-picture">
-                                <source
+                        <picture>
+                            <source
+                                media="(min-width: 1280px)"
+                                srcset="
+                                    ./img/variants/contact-melon-d1x.png,
+                                    ./img/variants/contact-melon-d2x.png 2x
+                                    "
+                                    type="image/jpg"
+                                    width="792"
+                                    height="502"
+                                
+                            />
+                            <source
+                            media="(min-width: 768px)"
+                            srcset="
+                                ./img/variants/contact-melon-t1x.png,
+                                ./img/variants/contact-melon-t2x.png 2x
+                            "
+                            width="344"
+                            type="image/jpg"
+                            height="480"
+                            />    
+                            <source
                                 media="(max-width: 767px)"
                                 srcset="
-                                    ./img/contact-melon-m1x.jpg    1x,
-                                    ./img/contact-melon-m2x.jpg    2x
+                                    ./img/variants/contact-melon-m1x.png,
+                                    ./img/variants/contact-melon-m2x.png 2x
                                 "
-                                />
-                                <source
-                                media="(min-width: 768px)"
-                                srcset="
-                                    ./img/contact-melon-t1x.jpg    1x,
-                                    ./img/contact-melon-t2x.jpg    2x
-                                "
-                                />
-                                <source
-                                media="(min-width: 1280px)"
-                                srcset="
-                                    ./img/contact-melon-d1x.jpg    1x,
-                                    ./img/contact-melon-d2x.jpg    2x
-                                "
-                                />
-                                <img class="img"
-                                src="./img/contact-melon-m1x.jpg"
-                                alt="melon"
-                                />
-                            </picture>
-                        </div>
+                                type="image/jpg"
+                                width="335"
+                                height="476"
+                            />
+                            <img class="contacts-image"
+                            src="./img/variants/contact-melon-m1x.png"
+                            alt="melon"
+                            width="100%"
+                            height="auto"
+                            loading="lazy"
+                            />
+                        </picture>
                     </li> 
                     <li class="hidden-contacts-item">
-                        <div class="thumb">
-                            <picture class="contacts-picture">
-                                <source
-                                media="(min-width: 768px)"
+                        <picture class="contacts-picture">
+                            <source
+                                media="(max-width: 1279px)"
                                 srcset="
-                                    ./img/contact-blueb-t1x.jpg    1x,
-                                    ./img/contact-blueb-t2x.jpg    2x
+                                    ./img/contacts-bb-t.jpg    1x,
+                                    ./img/contacts-bb-t2x.jpg    2x
                                 "
-                                />
-                                <source
+                                type="image/jpg"
+                                width="344"
+
+
+                            />
+                            <source
                                 media="(min-width: 1280px)"
                                 srcset="
-                                    ./img/contact-blueb-d1x.jpg    1x,
-                                    ./img/contact-blueb-d2x.jpg    2x
+                                    ./img/contacts-bb-d.jpg    1x,
+                                    ./img/contacts-bb-d2x.jpg    2x
                                 "
-                                />
-                                <img class="img"
-                                src="./img/contact-blueb-t1x.jpg"
+                                type="image/jpg"
+                                width="400"
+                                height="502"
+                            />
+                            <img class="contacts-image"
+                                src="./img/contacts-bb-d.jpg"
                                 alt="blueberry"
-                                />
-                            </picture>
-                        </div>
+                                width="100%"
+                                loading="lazy"
+                            />
+                        </picture>
                     </li>
                 </ul>
-            </div>
-        </div> 
-        <div class="contacts-bottom">
-            <p  class="paragraph-contacts">
-                Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!
-            </p>
-            <form>
-                <div class="input-together">
-                <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    class="input-field"
-                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                    placeholder="Enter email..."
-                    required
-                />
-                <button class="send-button" type="submit" name="submit">
+            <div class="contacts-bottom">
+                <p  class="paragraph-contacts">
+                Our boxes are packed with delicious, nutritious fruits 
+                and vegetables, perfect for anyone looking to eat 
+                healthier or support local farmers. Order your box today 
+                and start enjoying the best that nature has to offer!
+                </p>
+                <form class="contacts-form"> 
+                    <label class="contacts-label">            
+                        <input
+                            type="email"
+                            name="email"
+                            class="contacts-input-field"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            placeholder="Enter email..."
+                        />
+                    </label>  
+                    <button class="contacts-button" type="submit" name="submit">
                     Send
-                </button>
-                </div>
-            </form>
-        </div>
+                    </button>
+                </form>
+            </div>
     </div>
+    
 </section>
-<!-- </body>
-</html> -->

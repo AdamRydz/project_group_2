@@ -17,7 +17,7 @@
   padding: 1.25rem;
   background-color: white;
   border-radius: 20px;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
   flex: 1;
@@ -30,6 +30,7 @@
   gap: 1.5rem;
   flex-wrap: wrap;
   margin: 0 0.5rem;
+  padding: 44px 20px;
 
   .info-step {
     &:nth-child(n) {
@@ -65,6 +66,10 @@
   padding: 0.625rem;
   white-space: nowrap;
   font-size: 18px;
+}
+
+.info-tag-text {
+  color: black;
 }
 
 .info-text {

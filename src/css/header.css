@@ -1,10 +1,17 @@
-/*desktop*/
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding: 10px;
+
   background-color: white;
+
+}
+
+.icon-menu {
+  fill: #ae1332;
+  display: flex;
 }
 
 .nav-list {
@@ -20,14 +27,17 @@
   text-align: center;
   color: #ae1332;
 }
+
 .icon-logo {
   display: flex;
   fill: #ae1332;
 }
+
 .cart-icon {
   fill: #ae1332;
   display: flex;
 }
+
 .fhb {
   display: flex;
   text-transform: uppercase;
@@ -50,11 +60,29 @@
   }
 }
 
+/* @media screen and (min-width: 600px) {
+  .cart {
+    display: none;
+  }
+} */
+
 @media screen and (max-width: 600px) {
   .icon-menu {
     display: block;
   }
   .nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cart-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cart-icon {
     display: none;
   }
 }

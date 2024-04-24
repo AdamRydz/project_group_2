@@ -165,6 +165,9 @@
   color: #9dc262;
   fill: #9dc262;
 }
+.button-container {
+  padding-top: 40px;
+}
 
 .fruits-button:active {
   background-color: #fff;
