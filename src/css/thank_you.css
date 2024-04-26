@@ -185,7 +185,7 @@ h6,
     border-radius: 50%;
 }
 
-.container {
+.common-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -269,7 +269,7 @@ MM88MMM  ,adPPYYba,  88,dPPYba,   88   ,adPPYba,  MM88MMM
         height: 114px;
     }
 
-    .container {
+    .common-container {
         display: flex;
         max-width: 768px;
         padding: 0 32px 144px;
@@ -352,7 +352,7 @@ a8"    `Y88  a8P_____88  I8[    ""  88 ,a8"     88    a8"     "8a  88P'    "8a
         height: 114px;
     }
 
-    .container {
+    .common-container {
         display: flex;
         max-width: 1280px;
         padding: 0 32px 150px;
